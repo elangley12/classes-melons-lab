@@ -2,42 +2,51 @@
 # Part 1   #
 ############
 
+muskmelon = MelonType("musk", "1998, "green", True, True, "Muskmelon")
+casaba = MelonType("cas", "2003", "orange", False, False, "Casaba") 
+crenshaw = MelonType("cren", "1996", "g")                     
 
 class MelonType:
     """A species of melon at a melon farm."""
 
-    muskmelon_dict = {'Reporting Code': 'musk',
-                      'First Harvest': 1998,
-                      'Color': 'Green',
-                      'Pairs with': ['Mint'], #take out list if doesnt work
-                      'Seedless': True,
-                      'Bestseller': True,
+    # muskmelon_dict = ('code': 'musk',
+    #                   'First Harvest': 1998,
+    #                   'color': 'Green',
+    #                   'pairs_with': ['Mint'], #take out list if doesnt work
+    #                   'is_seedless': True,
+    #                   'is_bestseller': True,
+    #                   'name': 'Muskmelon'
 
-    }
+    # )
 
-    casaba_dict = {'Reporting Code': 'cas',
-                   'First Harvest': 2003,
-                   'Color': 'Orange',
-                   'Pairs with': ['Strawberries', 'Mint'],
-                   'Seedless': False,
-                   'Bestseller': False,
-    }
+    # casaba_dict = ()'code': 'cas',
+    #                'first_harvest': 2003,
+    #                'color': 'Orange',
+    #                'pairs_with': ['Strawberries', 'Mint'],
+    #                'is_seedless': False,
+    #                'is_bestseller': False,
+    #                'name': 'Casaba'
+    # )
 
-    crenshaw_dict = {'Reporting Code': 'cren',
-                   'First Harvest': 1996,
-                   'Color': 'Green',
-                   'Pairs with': ['Proscuitto'],
-                   'Seedless': False,
-                   'Bestseller': False,
-    }
+    # crenshaw_dict = {'code': 'cren',
+    #                'first_harvest': 1996,
+    #                'color': 'Green',
+    #                'pairs_with': ['Proscuitto'],
+    #                'is_seedless': False,
+    #                'is_bestseller': False,
+    #                'name': 'Crenshaw'
+    # }
 
-    yellow_watermelon_dict = {'Reporting Code': 'yw',
-                   'First Harvest': 2013,
-                   'Color': 'Yellow',
-                   'Pairs with': ['Ice Cream'],
-                   'Seedless': False,
-                   'Bestseller': True,
-    }
+    # yellow_watermelon_dict = {'code': 'yw',
+    #                'first_harvest': 2013,
+    #                'color': 'Yellow',
+    #                'pairs_with': ['Ice Cream'],
+    #                'is_seedless': False,
+    #                'is_bestseller': True,
+    #                'name': 'Yellow Watermelon'
+    # }
+    
+    
 
     def __init__(
         self, code, first_harvest, color, is_seedless, is_bestseller, name
@@ -45,8 +54,12 @@ class MelonType:
         """Initialize a melon."""
 
         self.pairings = []
-
-        # Fill in the rest
+        self.code = code
+        self.first_harvest = first_harvest
+        self.color = color
+        self.is_seedless = is_seedless
+        self.is_bestseller = is_bestseller
+        self.name = name
 
     def add_pairing(self, pairing):
         """Add a food pairing to the instance's pairings list."""
