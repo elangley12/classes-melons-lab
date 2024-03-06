@@ -2,12 +2,9 @@
 # Part 1   #
 ############
 
-muskmelon = MelonType("musk", "1998, "green", True, True, "Muskmelon")
-casaba = MelonType("cas", "2003", "orange", False, False, "Casaba") 
-crenshaw = MelonType("cren", "1996", "g")                     
-
 class MelonType:
     """A species of melon at a melon farm."""
+    
 
     # muskmelon_dict = ('code': 'musk',
     #                   'First Harvest': 1998,
@@ -64,13 +61,18 @@ class MelonType:
     def add_pairing(self, pairing):
         """Add a food pairing to the instance's pairings list."""
 
-        # Fill in the rest
+        self.pairings.append(pairing)
 
     def update_code(self, new_code):
         """Replace the reporting code with the new_code."""
 
-        # Fill in the rest
+        self.code = new_code
+        print(f'Code updated to {new_code}')
 
+muskmelon = MelonType("musk", 1998, "green", True, True, "Muskmelon")
+casaba = MelonType("cas", 2003, "orange", False, False, "Casaba")
+crenshaw = MelonType("cren", 1996, "green", False, False, "Crenshaw")
+yellow_watermelon = MelonType("yw", 2013, "yellow", True, True, "Yellow Watermelon")  
 
 def make_melon_types():
     """Returns a list of current melon types."""
