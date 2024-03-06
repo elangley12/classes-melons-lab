@@ -4,46 +4,7 @@
 
 class MelonType:
     """A species of melon at a melon farm."""
-    
-
-    # muskmelon_dict = ('code': 'musk',
-    #                   'First Harvest': 1998,
-    #                   'color': 'Green',
-    #                   'pairs_with': ['Mint'], #take out list if doesnt work
-    #                   'is_seedless': True,
-    #                   'is_bestseller': True,
-    #                   'name': 'Muskmelon'
-
-    # )
-
-    # casaba_dict = ()'code': 'cas',
-    #                'first_harvest': 2003,
-    #                'color': 'Orange',
-    #                'pairs_with': ['Strawberries', 'Mint'],
-    #                'is_seedless': False,
-    #                'is_bestseller': False,
-    #                'name': 'Casaba'
-    # )
-
-    # crenshaw_dict = {'code': 'cren',
-    #                'first_harvest': 1996,
-    #                'color': 'Green',
-    #                'pairs_with': ['Proscuitto'],
-    #                'is_seedless': False,
-    #                'is_bestseller': False,
-    #                'name': 'Crenshaw'
-    # }
-
-    # yellow_watermelon_dict = {'code': 'yw',
-    #                'first_harvest': 2013,
-    #                'color': 'Yellow',
-    #                'pairs_with': ['Ice Cream'],
-    #                'is_seedless': False,
-    #                'is_bestseller': True,
-    #                'name': 'Yellow Watermelon'
-    # }
-    
-    
+    species = "melon"
 
     def __init__(
         self, code, first_harvest, color, is_seedless, is_bestseller, name
@@ -78,8 +39,10 @@ def make_melon_types():
     """Returns a list of current melon types."""
 
     all_melon_types = []
+    self.name.append(all_melon_types)
 
-    # Fill in the rest
+    all_melon_types.append()
+    
 
     return all_melon_types
 
