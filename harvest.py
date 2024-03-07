@@ -1,3 +1,4 @@
+
 ############
 # Part 1   #
 ############
@@ -30,18 +31,31 @@ class MelonType:
         self.code = new_code
         print(f'Code updated to {new_code}')
 
-muskmelon = MelonType("musk", 1998, "green", True, True, "Muskmelon")
-casaba = MelonType("cas", 2003, "orange", False, False, "Casaba")
-crenshaw = MelonType("cren", 1996, "green", False, False, "Crenshaw")
-yellow_watermelon = MelonType("yw", 2013, "yellow", True, True, "Yellow Watermelon")  
+# muskmelon = MelonType("musk", 1998, "green", True, True, "Muskmelon")
+# casaba = MelonType("cas", 2003, "orange", False, False, "Casaba")
+# crenshaw = MelonType("cren", 1996, "green", False, False, "Crenshaw")
+# yellow_watermelon = MelonType("yw", 2013, "yellow", True, True, "Yellow Watermelon")  
 
 def make_melon_types():
     """Returns a list of current melon types."""
 
     all_melon_types = []
-    self.name.append(all_melon_types)
+    musk = MelonType("musk", "Muskmelon",1998, "green", True, True,)
+    musk.add_pairing("mint")
+    all_melon_types.append(musk)
 
-    all_melon_types.append()
+    cas = MelonType("cas", "Casaba", 2003, "orange", False, False,)
+    cas.add_pairing("mint")
+    cas.add_pairing("strawberries")
+    all_melon_types.append(cas)
+
+    cren = MelonType("cren", "Crenshaw", 1998, "green", False, False,)
+    cren.add_pairing("proscuitto")
+    all_melon_types.append(cren)
+
+    yw = MelonType("yw", "Yellow Watermelon", 2013, "yellow", False, True,)
+    yw.add_pairing("ice cream")
+    all_melon_types.append(yw)
     
 
     return all_melon_types
